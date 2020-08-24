@@ -8,5 +8,4 @@ class Ingredient():
         self.description = description
 
     def describe(self):
-        print(f'Ingredient: {self.name}, rarity: {self.rarity}, details: {self.details}, DC: {self.DC}, regions: {self.regions}, description: {self.description})
-        
+        print(f'Ingredient: {self.name}, \nrarity: {self.rarity}, \ndetails: {self.details}, \nDC: {self.DC}, \nregions: {self.regions}, \ndescription: {self.description}')
