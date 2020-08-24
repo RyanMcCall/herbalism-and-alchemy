@@ -14,6 +14,11 @@ def menu():
     print('4: Exit')
     print()
 
+def find_herbs():
+    # Make the roll
+    # Declare a region
+    # Roll for ingredients
+
 ################
 # Running Code #
 ################
@@ -25,7 +30,9 @@ user_choice = '0'
 while user_choice != '4':
     menu()
     user_choice = input('What would you like to do? ')
+    print()
     # Find Herbs
+    find_herbs()
     # Identify Herbs
     # Craft Potion
     # Exit
