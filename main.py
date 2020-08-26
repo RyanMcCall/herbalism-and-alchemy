@@ -35,4 +35,4 @@ while user_choice != '4':
     find_herbs()
     # Identify Herbs
     # Craft Potion
-    # Exit
+    # Exit the program
