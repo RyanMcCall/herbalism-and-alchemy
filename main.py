@@ -21,6 +21,7 @@ def find_herbs():
     sleep(1)
     player_search_roll = input("(D20 + WIS or INT + Prof if profiecient with Herbalism Kit): ")
     # Declare a region
+
     # Roll for ingredients
 
 # Identify Herbs
@@ -41,6 +42,8 @@ def execute_user_choice(choice):
         identify_herbs()
     elif choice == '3':
         craft_potions()
+    else:
+        print('Please input a valid choice')
 
 ################
 # Running Code #
@@ -54,5 +57,6 @@ while user_choice != '4':
     show_menu()
     user_choice = input('What would you like to do? ')
     print()
-    execute_user_choice(user_choice)
+    if user_choice != '4':
+        execute_user_choice(user_choice)
     # Exit the program
