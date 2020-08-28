@@ -17,6 +17,7 @@ def show_menu():
 def get_current_region():
     valid_regions = ['arctic', 'coastal', 'underwater', 'desert', 'forest', 'grasslands', 'hills', 'mountain', 'swamp', 'underdark']
 
+    # Loop until valid response
 
 # Find Herbs
 def find_herbs():
