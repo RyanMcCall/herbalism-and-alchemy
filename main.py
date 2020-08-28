@@ -14,15 +14,22 @@ def show_menu():
     print('4: Exit')
     print()
 
+def get_current_region():
+    valid_regions = ['arctic', 'coastal', 'underwater', 'desert', 'forest', 'grasslands', 'hills', 'mountain', 'swamp', 'underdark']
+    
+
 # Find Herbs
 def find_herbs():
     # Make the roll
     print("Have the player make an Herbalism check.")
     sleep(1)
-    player_search_roll = input("(D20 + WIS or INT + Prof if profiecient with Herbalism Kit): ")
+    player_search_roll = input("(D20 + WIS or INT + Prof if profiecient with and using a Herbalism Kit): ")
     # Declare a region
-
-    # Roll for ingredients
+    if player_roll >= 15:
+        region = get_current_region()
+        # Roll for ingredients
+    else:
+        print('Search failed!')
 
 # Identify Herbs
 def identify_herbs():
