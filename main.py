@@ -16,7 +16,7 @@ def show_menu():
 
 def get_current_region():
     valid_regions = ['arctic', 'coastal', 'underwater', 'desert', 'forest', 'grasslands', 'hills', 'mountain', 'swamp', 'underdark']
-    
+
 
 # Find Herbs
 def find_herbs():
@@ -36,9 +36,6 @@ def identify_herbs():
     pass
 
 # Craft Potion
-def identify_herbs():
-    pass
-
 def craft_potions():
     pass
 
