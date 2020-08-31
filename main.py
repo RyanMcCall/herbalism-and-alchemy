@@ -24,7 +24,7 @@ def find_herbs():
     # Make the roll
     print("Have the player make an Herbalism check.")
     sleep(1)
-    player_search_roll = input("(D20 + WIS or INT + Prof if profiecient with and using a Herbalism Kit): ")
+    player_search_roll = int(input("(D20 + WIS or INT + Prof if profiecient with and using a Herbalism Kit): "))
     # Declare a region
     if player_roll >= 15:
         region = get_current_region()
