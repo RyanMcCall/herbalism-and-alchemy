@@ -14,10 +14,25 @@ def show_menu():
     print('4: Exit')
     print()
 
+def show_valid_regions(list_of_regions):
+    print()
+    print('Valid Regions')
+    print('-------------')
+    for item in list_of_regions:
+        print(item)
+
 def get_current_region():
     valid_regions = ['arctic', 'coastal', 'underwater', 'desert', 'forest', 'grasslands', 'hills', 'mountain', 'swamp', 'underdark']
 
     # Loop until valid response
+    show_valid_regions(valid_regions)
+    region_response = input('What region are you in? ').lower()
+
+    while True:
+        if region_response in valid_regions:
+            return region_response
+        else:
+            region_response = input('Invalid response! Please input a valid region: ')
 
 # Find Herbs
 def find_herbs():
@@ -26,11 +41,12 @@ def find_herbs():
     sleep(1)
     player_search_roll = int(input("(D20 + WIS or INT + Prof if profiecient with and using a Herbalism Kit): "))
     # Declare a region
-    if player_roll >= 15:
+    if player_search_roll >= 15:
         region = get_current_region()
         # Roll for ingredients
     else:
         print('Search failed!')
+        print()
 
 # Identify Herbs
 def identify_herbs():
