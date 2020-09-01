@@ -1,6 +1,5 @@
 def run():
     print('Rolling ingredients...')
-    print(roll_tables['arctic'][3])
 
 roll_tables = {
     'arctic': {
@@ -15,5 +14,12 @@ roll_tables = {
         10: 'Fennel Silk',
         11: "Fiend's Ivy",
         12: 'Voidroot'
+    },
+    'coastal': {
+        2: 'Hydrathistle',
+        3: 'Amanita Cap',
+        4: 'Hyancinth Nectar',
+        5: 'Chromus Slime',
+
     }
 }
