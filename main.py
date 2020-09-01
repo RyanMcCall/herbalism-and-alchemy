@@ -1,4 +1,5 @@
 from time import sleep
+import region_roll_tables
 
 def greeting():
     print()
@@ -45,7 +46,9 @@ def find_herbs():
     if player_search_roll >= 15:
         print("Success!")
         region = get_current_region()
+        print()
         # Roll for ingredients
+        region_roll_tables.run()
     else:
         print('Search failed!')
         print()
