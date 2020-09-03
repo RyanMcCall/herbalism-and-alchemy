@@ -195,7 +195,23 @@ devils_bloodleaf = Ingredient(
     health to one who can properly prepare the plant.""",
     "DB",
 )
-drakus_flower = None
+drakus_flower = Ingredient(
+    "Drakus Flower",
+    "Common",
+    "Toxin Modifier",
+    """Change poison damage to fire or acid damage; target is
+    still [poisoned] for 1 minute on a failed CON saving throw; this toxin is still
+    considered poison damage when combining with other ingredients.""",
+    2,
+    ["Desert", "Grasslands", "Moutain"],
+    """This bright red and pale green flower can be
+    found in both temperate and warm environments. It’s a natural
+    favorite amongst entertainers, due to the petal’s ability to ignite
+    with a moderate application of friction. This ignition does not
+    cause harm, but instead creates theatrical sparks with the ability
+    to light fires and create warmth.""",
+    "DF",
+)
 dried_ephedra = None
 elemental_water = None
 emetic_wax = None
