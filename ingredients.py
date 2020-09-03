@@ -180,7 +180,21 @@ cosmos_glond = Ingredient(
     reverberates and alters the other plant life it touches instead.""",
     "CG",
 )
-devils_bloodleaf = None
+devils_bloodleaf = Ingredient(
+    "Devil's Bloodleaf",
+    "Very Rare",
+    "Enchantment",
+    "User creates a potion of vitality (DMG 188).",
+    5,
+    ["Hills", "Swamp", "Underdark"],
+    """Only a few recorded instances of this red
+    and yellow flower exist. This large and bold red leaf can be going
+    back in history to the dawn of humankind. It was once a popular
+    decoration around homes and gardens, but has become one of the
+    rarest plants in the world. It is said to give immense vitality and
+    health to one who can properly prepare the plant.""",
+    "DB",
+)
 drakus_flower = None
 dried_ephedra = None
 elemental_water = None
