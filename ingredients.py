@@ -212,9 +212,43 @@ drakus_flower = Ingredient(
     to light fires and create warmth.""",
     "DF",
 )
-dried_ephedra = None
-elemental_water = None
-emetic_wax = None
+dried_ephedra = Ingredient(
+    "Dried Ephedra",
+    "Uncommon",
+    "Potion Modifier",
+    "Increase the dice-type by 1 size for any healing Effect.",
+    2,
+    ["Desert", "Mountain"],
+    """A bush often found in dry environments, it is
+    thorny and hard to harvest without scratching your skin. It has a
+    distinct dark purple hue when viewed at a distance, but up close it
+    looks black. Herbalists love to use this plant when making healing
+    tonics as it has the odd ability to enhance Wild Sageroot.""",
+    "DE",
+)
+elemental_water = Ingredient(
+    "Elemental Water",
+    "Rare",
+    "Special (Enchantment)",
+    "This is required as the base catalyst for all Enchantment ingredients.",
+    3,
+    ["Special"],
+    """This unique liquid shares properties of
+    the planar realms of the 4 elements. At times you can see rocks
+    floating unnaturally in the middle and at other times you can
+    swear you see fire in the water. This special water can be found in
+    all environments as it is not bound to our physical world’s rules.""",
+    "EW",
+)
+emetic_wax = Ingredient(
+    "Emetic Wax",
+    "Common",
+    "Special (Potion Modifier & Toxin Modifier",
+    "Delay the Effect of an ingredient this was combined with by 1d6 rounds.",
+    2,
+    ["Forest", "Swamp"],
+    
+)
 fennel_silk = None
 fiends_ivy = None
 frozen_seedlings = None
