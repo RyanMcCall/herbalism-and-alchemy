@@ -238,7 +238,7 @@ elemental_water = Ingredient(
     floating unnaturally in the middle and at other times you can
     swear you see fire in the water. This special water can be found in
     all environments as it is not bound to our physical world’s rules.""",
-    "EW",
+    "EWat",
 )
 emetic_wax = Ingredient(
     "Emetic Wax",
@@ -247,16 +247,137 @@ emetic_wax = Ingredient(
     "Delay the Effect of an ingredient this was combined with by 1d6 rounds.",
     2,
     ["Forest", "Swamp"],
-    
+    """This thick, white wax is often found seeping out
+    of trees near lush and wet areas. It is commonly used in candle
+    making, as the wax melts and re-hardens rather quickly, yet is
+    strong enough to form delicate shapes. Herbalists use it to control
+    how their tonics enter the body, performing miraculous feats.""",
+    "EWax"
 )
-fennel_silk = None
-fiends_ivy = None
-frozen_seedlings = None
-harrada_leaf = None
-hyancinth_nectar = None
-hydrathistle = None
-ironwood_heart = None
-lavender_sprig = None
+fennel_silk = Ingredient(
+    "Fennel Silk",
+    "Common",
+    "Potion Effect",
+    """Stabilizes body heat to resist cold weather or wet condition penalties for 1 hour. 
+    Cannot be altered by other ingredients.""",
+    2,
+    ["Arctic", "Underdark"],
+    """Often mistaken for a spider’s web, this white
+    web like plant grows amongst frigid and dark environments.
+    It uses sharp hooked tendrils to help secure the edges of the
+    plant to nearby rocks or plants. Adventurers that are adept in
+    the use of Fennel Silk will recognize the many applications it
+    has for protecting your extremities from harsh-low temperature
+    environments.""",
+    "FS"
+)
+fiends_ivy = Ingredient(
+    "Fiend's Ivy",
+    "Rare",
+    "Enchantment",
+    "User creates a potion of mind reading (DMG 188)",
+    4,
+    ["Arctic", "Underdark"],
+    """These long, red thorn-encrusted vines can stretch
+    up to 3 feet long and have sharp thorns that reach up to an inch
+    or two long. It isn’t rare to find blood stains amongst these vines
+    as many animals and adventurers can easily trip or get caught
+    in a bushel of the vines. The vines also seem to have a sentient
+    quality to them as they relax when prey is near, and contract when
+    captured.""",
+    "FI"
+)
+frozen_seedlings = Ingredient(
+    "Frozen Seedlings",
+    "Rare",
+    "Toxin Modifier",
+    """While poisoned, target’s movement speed is reduced by 10 ft for 1 minute. Cannot be 
+    altered by other ingredients.""",
+    4,
+    ["Arctic", "Mountain"],
+    """These small, pea sized pods can be found
+    amongst resilient flowers in very cold environments. Named for
+    their almost frozen appearance, they can be plucked with relative
+    ease and are often used in cold alcoholic drinks. Some assassins
+    have found ways to crush these into a paste and hamper one’s
+    movements.""",
+    "FS"
+)
+harrada_leaf = Ingredient(
+    "Harrada Leaf",
+    "Common",
+    "Toxin Modifier",
+    """While [poisoned], target has disadvantage on ability checks. Cannot be altered by 
+    other ingredients.""",
+    1,
+    ["Forest"],
+    """This huge yellow leaf can often be found near
+    tree tops in lush environments. It is often cultivated and harvested
+    by gangs or the Thieves Guilds to be sold as a street drug. The
+    potent nature of this addictive substance will cause a brief
+    euphoric state coupled with an increase in a specific attribute;
+    followed by a long recovery period in which the user is extremely
+    weakened in that attribute.""",
+    "HL"
+)
+hyancinth_nectar = Ingredient(
+    "Hyancinth Nectar",
+    "Common",
+    "Potion Effect",
+    """Removes 1d6 rounds of poison in the target’s system, but cannot remove it completely. 
+    One round of poison damage will still occur at minimum.""",
+    1,
+    ["Coastal", "Grasslands"],
+    """This blue and white thick liquid can be
+    extracted from the Hyancinth’s near somewhat wet areas. This
+    nectar is of high demand and is often used by highly trained
+    guards to counter poisons that evil people attempt to use on them.
+    While it does not cure the mean of poisons, it severely limits its
+    effects.""",
+    "HN"
+)
+hydrathistle = Ingredient(
+    "Hydrathistle",
+    "Uncommon",
+    "Enchantment",
+    "User creates a potion of water breathing (DMG 188)",
+    2,
+    ["Coastal, Swamp"],
+    """Named for its appearance, this three-
+    pronged blue and black flower is often found in dark and dank
+    environments. When used alone, the thistle has no real beneficial
+    effects. However, skilled alchemists have been able to use highly
+    powerful and natural water to concoct potions that allow them to
+    breath in water.""",
+    "H"
+)
+ironwood_heart = Ingredient(
+    "Ironwood Heart",
+    "Uncommon",
+    "Enchantment",
+    "User creates a potion of growth (DMG 187)",
+    3,
+    ["Arctic", "Forest", "Hills"],
+    """This gnarled white seed is commonly found in
+    the nooks of Ironwood Trees. These large seeds pulse with a slow
+    repetitive beat when gripped tightly, often referred to as “Nature’s
+    Heartbeat”. It is said that when cooked or properly prepared by a
+    Herbalist these seeds can increase a beings physical size greatly.""",
+    "IH"
+)
+lavender_sprig = Ingredient(
+    "Lavender Sprig",
+    "Common",
+    "Special (Potion Modifier & Toxin Modifier)",
+    "Makes the potion or toxin more stable and safer to craft.",
+    -2,
+    ["Coastal", "Grasslands", "Hills"],
+    """These long stemmed purple-petal flowers can
+    often be found swaying in the wind in huge patches. They are very
+    common amongst green environments and have a distinct sweet
+    smell. However, they taste extremely bitter when eaten.""",
+    "LS"
+)
 luminous_cap_dust = None
 mandrake_root = None
 milkweed_seeds = None
