@@ -401,7 +401,16 @@ mandrake_root = Ingredient(
     ours. Only hinders already existing poisons or diseases in the body.
     Cannot be altered by other ingredients.""",
     0,
-    ["Arctic", "Coastal", "Underwater", "Desert", "Forest", "Grasslands", "Hills", "Swamp"],
+    [
+        "Arctic",
+        "Coastal",
+        "Underwater",
+        "Desert",
+        "Forest",
+        "Grasslands",
+        "Hills",
+        "Swamp",
+    ],
     """This tan root has serrated edges all along
     its body that often cause injury to Herbalists that do not properly
     know how to handle it. When stripped of its outer skin, the soft
@@ -416,7 +425,16 @@ milkweed_seeds = Ingredient(
     """Double the dice rolled of any healing Effect, but remove all Alchemy Modifier bonuses. 
     This modifier can stack.""",
     2,
-    ["Arctic", "Coastal", "Underwater", "Desert", "Forest", "Grasslands", "Hills", "Swamp"],
+    [
+        "Arctic",
+        "Coastal",
+        "Underwater",
+        "Desert",
+        "Forest",
+        "Grasslands",
+        "Hills",
+        "Swamp",
+    ],
     """These small, white translucent seeds can
     be found when opening up a Milkweed Flower. They are often
     eaten by children due to their friendly look, but can cause negative
