@@ -470,7 +470,21 @@ nightshade_berries = Ingredient(
     the berries natural ability to affect a persons body.""",
     "NB",
 )
-primordial_balm = None
+primordial_balm = Ingredient(
+    "Primordial Balm",
+    "Rare",
+    "Enchantment",
+    "User creates a potion of frost/fire/stone giant strength (DMG 187)",
+    4,
+    ["Mountain", "Swamp", "Underdark"],
+    """This thick substance has been observed
+    changing its coloring, almost at will. The balm is unusually warm
+    to the touch, and can seem to retain heat for weeks on end.
+    Herbalists often find this substance growing on rocks in humid
+    environments. The exact rarity of the substance is unknown, as its
+    constantly changing appearance makes it difficult to identify.""",
+    "PB",
+)
 quicksilver_lichen = None
 radiant_synthseed = None
 rock_vine = None
