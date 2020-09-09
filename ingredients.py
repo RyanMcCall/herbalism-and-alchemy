@@ -252,7 +252,7 @@ emetic_wax = Ingredient(
     making, as the wax melts and re-hardens rather quickly, yet is
     strong enough to form delicate shapes. Herbalists use it to control
     how their tonics enter the body, performing miraculous feats.""",
-    "EWax"
+    "EWax",
 )
 fennel_silk = Ingredient(
     "Fennel Silk",
@@ -269,7 +269,7 @@ fennel_silk = Ingredient(
     the use of Fennel Silk will recognize the many applications it
     has for protecting your extremities from harsh-low temperature
     environments.""",
-    "FS"
+    "FS",
 )
 fiends_ivy = Ingredient(
     "Fiend's Ivy",
@@ -285,7 +285,7 @@ fiends_ivy = Ingredient(
     in a bushel of the vines. The vines also seem to have a sentient
     quality to them as they relax when prey is near, and contract when
     captured.""",
-    "FI"
+    "FI",
 )
 frozen_seedlings = Ingredient(
     "Frozen Seedlings",
@@ -301,7 +301,7 @@ frozen_seedlings = Ingredient(
     ease and are often used in cold alcoholic drinks. Some assassins
     have found ways to crush these into a paste and hamper one’s
     movements.""",
-    "FS"
+    "FS",
 )
 harrada_leaf = Ingredient(
     "Harrada Leaf",
@@ -318,7 +318,7 @@ harrada_leaf = Ingredient(
     euphoric state coupled with an increase in a specific attribute;
     followed by a long recovery period in which the user is extremely
     weakened in that attribute.""",
-    "HL"
+    "HL",
 )
 hyancinth_nectar = Ingredient(
     "Hyancinth Nectar",
@@ -334,7 +334,7 @@ hyancinth_nectar = Ingredient(
     guards to counter poisons that evil people attempt to use on them.
     While it does not cure the mean of poisons, it severely limits its
     effects.""",
-    "HN"
+    "HN",
 )
 hydrathistle = Ingredient(
     "Hydrathistle",
@@ -349,7 +349,7 @@ hydrathistle = Ingredient(
     effects. However, skilled alchemists have been able to use highly
     powerful and natural water to concoct potions that allow them to
     breath in water.""",
-    "H"
+    "H",
 )
 ironwood_heart = Ingredient(
     "Ironwood Heart",
@@ -363,7 +363,7 @@ ironwood_heart = Ingredient(
     repetitive beat when gripped tightly, often referred to as “Nature’s
     Heartbeat”. It is said that when cooked or properly prepared by a
     Herbalist these seeds can increase a beings physical size greatly.""",
-    "IH"
+    "IH",
 )
 lavender_sprig = Ingredient(
     "Lavender Sprig",
@@ -376,7 +376,7 @@ lavender_sprig = Ingredient(
     often be found swaying in the wind in huge patches. They are very
     common amongst green environments and have a distinct sweet
     smell. However, they taste extremely bitter when eaten.""",
-    "LS"
+    "LS",
 )
 luminous_cap_dust = None
 mandrake_root = None
