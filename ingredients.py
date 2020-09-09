@@ -485,8 +485,47 @@ primordial_balm = Ingredient(
     constantly changing appearance makes it difficult to identify.""",
     "PB",
 )
-quicksilver_lichen = None
-radiant_synthseed = None
+quicksilver_lichen = Ingredient(
+    "Quicksilver Lichen",
+    "Uncommon",
+    "Toxin Modifier",
+    """Double the dice rolled of any Toxin Effect, but reduce that
+    Effect duration by half. This modifier can stack.""",
+    3,
+    [
+        "Arctic",
+        "Coastal",
+        "Underwater",
+        "Desert",
+        "Forest",
+        "Grasslands",
+        "Hills",
+        "Swamp",
+    ],
+    """This silver and grey silky moss can be
+    found growing amongst almost any substance as it seems to
+    ignore environmental standards. Assassins have been able to
+    use this lichen to quickly administer their toxins into the target’s
+    system without any drawbacks. However, this takes some
+    preparation and is often forgotten by common folk.""",
+    "QL",
+)
+radiant_synthseed = Ingredient(
+    "Radiant Synthseed",
+    "Rare",
+    "Toxin Modifier",
+    """Change poison damage to radiant damage; target is still
+    [poisoned] for 1 minute on a failed CON saving throw; this toxin is still
+    considered poison damage when combining with other ingredients.""",
+    2,
+    ["Underdark"],
+    """This long black and boat shaped seed
+    emanates a strong yellow glow, and often exerts the smell of
+    flowers. When the seed is cracked open, a person can find a few
+    smaller looking seeds of the same nature. These smaller seeds
+    can often be crushed or blended into mixtures to enhance toxins.""",
+    "RS",
+)
 rock_vine = None
 scillia_beans = None
 silver_hibiscus = None
