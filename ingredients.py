@@ -378,11 +378,80 @@ lavender_sprig = Ingredient(
     smell. However, they taste extremely bitter when eaten.""",
     "LS",
 )
-luminous_cap_dust = None
-mandrake_root = None
-milkweed_seeds = None
-mortflesh_powder = None
-nightshade_berries = None
+luminous_cap_dust = Ingredient(
+    "Luminous Cap Dust",
+    "Rare",
+    "Enchantment",
+    "User creates a potion of heroism (DMG 188).",
+    4,
+    ["Mountain", "Underdark"],
+    """This powder can be shook from the
+    glowing yellow mushrooms often found in extremely dark
+    environments and it keeps an ember-like glow for about a week
+    after extracted. Many Herbalists keep the glowing mushrooms
+    themselves in dark cellars in order to harvest this dust every
+    chance they can.""",
+    "LCD",
+)
+mandrake_root = Ingredient(
+    "Mandrake Root",
+    "Common",
+    "Potion Effect",
+    """Reduce any disease or poison’s potency by half for 2d12
+    ours. Only hinders already existing poisons or diseases in the body.
+    Cannot be altered by other ingredients.""",
+    0,
+    ["Arctic", "Coastal", "Underwater", "Desert", "Forest", "Grasslands", "Hills", "Swamp"],
+    """This tan root has serrated edges all along
+    its body that often cause injury to Herbalists that do not properly
+    know how to handle it. When stripped of its outer skin, the soft
+    tender center can be eaten with relative ease and is often used by
+    Doctors to reduce pain from poison or disease.""",
+    "MR",
+)
+milkweed_seeds = Ingredient(
+    "Milkweed Seeds",
+    "Common",
+    "Potion Modifier",
+    """Double the dice rolled of any healing Effect, but remove all Alchemy Modifier bonuses. 
+    This modifier can stack.""",
+    2,
+    ["Arctic", "Coastal", "Underwater", "Desert", "Forest", "Grasslands", "Hills", "Swamp"],
+    """These small, white translucent seeds can
+    be found when opening up a Milkweed Flower. They are often
+    eaten by children due to their friendly look, but can cause negative
+    digestive effects this way. When crushed up and diluted with other
+    liquid these seeds offer very powerful healing effects.""",
+    "MS",
+)
+mortflesh_powder = Ingredient(
+    "Mortflesh Powder",
+    "Very Rare",
+    "Enchantment",
+    "User creates a potion of longevity (DMG 188).",
+    5,
+    ["Arctic", "Underdark"],
+    """This dark purple powder is often found
+    growing on top of moss in dark, cold environments. This powder
+    is often used as makeup for young men and women to reduce
+    the look of age from their faces. When imbibed with a magical
+    catalyst, the effect is said to be permanent when consumed.""",
+    "MP",
+)
+nightshade_berries = Ingredient(
+    "Nightshade Berries",
+    "Uncommon",
+    "Enchantment",
+    """The effect of this "potion" is similiar to the oil of slipperiness (DMG 184).""",
+    3,
+    ["Forest", "Hills"],
+    """These light blue berries can be found in
+    small clumped packs among small bushes in lush environments.
+    They can be safely ingested and are often eaten by wild animals
+    for their sweet, but tangy flavor. A skilled Herbalist can enhance
+    the berries natural ability to affect a persons body.""",
+    "NB",
+)
 primordial_balm = None
 quicksilver_lichen = None
 radiant_synthseed = None
