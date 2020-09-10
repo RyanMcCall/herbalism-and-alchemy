@@ -303,6 +303,20 @@ frozen_seedlings = Ingredient(
     movements.""",
     "FS",
 )
+gengko_brush = Ingredient(
+    "Gengko Brush",
+    "Uncommon",
+    "Potion Modifier",
+    """Double the dice rolled of any healing Effect, but divide the
+    total of the dice by 2 (rounding down); Then, the recipient receives that
+    amount of healing per round for 2 rounds.""",
+    2,
+    ["Hills", "Underdark"],
+    """These fan shaped leaves can be found beneath the branches of the gengko tree. The 
+    genko tree is known as one of the most ancient trees in existance. Many have found 
+    the leaves to possess numerous healing properties.""",
+    "GB"
+)
 harrada_leaf = Ingredient(
     "Harrada Leaf",
     "Common",
