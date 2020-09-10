@@ -526,10 +526,68 @@ radiant_synthseed = Ingredient(
     can often be crushed or blended into mixtures to enhance toxins.""",
     "RS",
 )
-rock_vine = None
-scillia_beans = None
-silver_hibiscus = None
-spineflower_berries = None
+rock_vine = Ingredient(
+    "Rock Vine",
+    "Rare",
+    "Enchantment",
+    "User creates a potion of invulnerability (DMG 188).",
+    4,
+    ["Hills", "Mountain"],
+    """This extremely hardened dark green vine can be
+    found growing in the ground near very old minerals, often seeming
+    to feed off the minerals themselves. At first glance this vine seems
+    completely useless to mortals, but arcane studies have shown
+    this vine to harden a person’s skin significantly if combined with a
+    powerful catalyst.""",
+    "RV",
+)
+scillia_beans = Ingredient(
+    "Scillia Beans",
+    "Common",
+    "Enchantment",
+    "User creates a potion of climbing (DMG 187).",
+    1,
+    ["Desert", "Grasslands"],
+    """These light brown beans can occasionally
+    be found hanging from Scillia Bushes in dry atmosphere
+    environments. They are often used to enhance flavors in stew and
+    other meals, but have a much stranger effect. At full potency, some
+    of these beans can offer the user the ability to climb steep cliffs
+    and rock faces with ease.""",
+    "SBea",
+)
+silver_hibiscus = Ingredient(
+    "Silver Hibiscus",
+    "Rare",
+    "Enchantment",
+    """When consumed by target, they can unleash a random
+    elemental breathe weapon 3 times (PHB 34). Cannot be altered by other
+    ingredients.""",
+    4,
+    ["Arctic", "Underdark"],
+    """This silver-grey plant looks as though it
+    represents madness itself. It often has random patterns and
+    unplanned shapes, but always has a black web-like pattern on it.
+    Although it may look deadly to touch, when prepared properly a
+    Herbalist can unleash a torrent of elemental power representing a
+    breath weapon.""",
+    "SH"
+)
+spineflower_berries = Ingredient(
+    "Spineflower Berries",
+    "Uncommon",
+    "Toxin Modifier",
+    "Increase the dice-type by 1 size for any Toxin Effect",
+    3,
+    ["Desert", "Swamp"],
+    """Often found hanging amongst the bone-
+    like flowers, this white berry can be harvested and crushed to
+    enhance toxins made by scoundrels. However, this effect only
+    applies when introduced directly to the bloodstream. When
+    ingested normally these berries provide little sustenance, but do
+    not harm the person.""",
+    "SBer"
+)
 tail_leaf = None
 verdant_nettle = None
 voidroot = None
