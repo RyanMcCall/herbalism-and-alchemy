@@ -571,7 +571,7 @@ silver_hibiscus = Ingredient(
     Although it may look deadly to touch, when prepared properly a
     Herbalist can unleash a torrent of elemental power representing a
     breath weapon.""",
-    "SH"
+    "SH",
 )
 spineflower_berries = Ingredient(
     "Spineflower Berries",
@@ -586,12 +586,127 @@ spineflower_berries = Ingredient(
     applies when introduced directly to the bloodstream. When
     ingested normally these berries provide little sustenance, but do
     not harm the person.""",
-    "SBer"
+    "SBer",
 )
-tail_leaf = None
-verdant_nettle = None
-voidroot = None
-wild_sageroot = None
-wisp_stalks = None
-wrackwort_bulbs = None
-wyrmtongue_petals = None
+tail_leaf = Ingredient(
+    "Tail Leaf",
+    "Very Rare",
+    "Enchantment",
+    "User creates a potion of speed (DMG 188).",
+    5,
+    ["Grasslands", "Hills"],
+    """This very fuzzy, dark green leaf looks like a circle with
+    three thick strands hanging from it. When held, the leaf itself feels
+    as though it is vibrating. It is known that a skilled Herbalist can
+    use these leaves in concoctions to create powerful magical effects
+    to enhance one’s speed.""",
+    "TL",
+)
+verdant_nettle = Ingredient(
+    "Verdant Nettle",
+    "Uncommon",
+    "Enchantment",
+    "User creates a potion of animanl friendship (DMG 187).",
+    2,
+    ["Forest"],
+    """With its dark green and yellow speckled mesh,
+    this plant can be easily spotted. It normally grows in forests and
+    can catch a person’s feet when traveling if they do not have proper
+    footing. Alchemists like to use this plant to create tonics that
+    enhance one’s strength and reflexes.""",
+    "VN",
+)
+voidroot = Ingredient(
+    "Voidroot",
+    "Very Rare",
+    "Enchantment",
+    "User creates a potion of flying (DMG 187).",
+    5,
+    ["Arctic", "Desert"],
+    """This dark grey thick root is often found amongst the
+    most extreme environments. It normally grows in either desert
+    or arctic environments and seems to vary in growth rate per root.
+    Herbalists tend to be very careful when they extract this root from
+    the ground, as it seems to defy gravity and want to “fly” away.""",
+    "V",
+)
+wild_sageroot = Ingredient(
+    "Wild Sageroot",
+    "Common",
+    "Potion Effect",
+    "Heals for 2d4 + Alchemy Modifier",
+    0,
+    [
+        "Arctic",
+        "Coastal",
+        "Underwater",
+        "Desert",
+        "Forest",
+        "Grasslands",
+        "Hills",
+        "Swamp",
+    ],
+    """The most common ingredient found among
+    doctors and healer’s equipment would be these light pink
+    roots. They measure about 3 to 5 inches in length and have a
+    smooth, fuzzy texture to them. They are used every day by skilled
+    Alchemists and healers to create concoctions of extraordinary
+    healing power.""",
+    "WSa",
+)
+wisp_stalks = Ingredient(
+    "Wisp Stalks",
+    "Very Rare",
+    "Enchantment",
+    "User creates a potion of invisibility (DMG 188).",
+    5,
+    ["Forest", "Underdark"],
+    """This incredibly rare fungi has become something
+    of a fable amongst herbalists. It is reported to have a large bulbous
+    cap growing atop a thin stem, and to normally form in small
+    clusters deep within damp cave environments and forests. The
+    organism is usually a translucent blue, and is rumored to render
+    creatures invisible once consumed.""",
+    "WSt",
+)
+wrackwort_bulbs = Ingredient(
+    "Wrackwort Bulbs",
+    "Rare",
+    "Enchantment",
+    "User creates a potion diminution (DMG 187).",
+    4,
+    ["Coastal", "Swamp"],
+    """These huge white bulbs can be found on
+    small yellow mushrooms often found in swamps or wet caverns.
+    The mushroom releases a puff of powder from these bulbs when
+    threatened and it tends to confuse and hinder a person. When
+    harvested successfully, these bulbs can be ground into a paste and
+    imbibed within magical water to diminish the size of a being.""",
+    "WB",
+)
+wyrmtongue_petals = Ingredient(
+    "Wyrmtongue Petals",
+    "Common",
+    "Toxin Effect",
+    "1d4 + Alchemy Modifier poison damage per round; target is [poisoned] for 1 minute.",
+    0,
+    [
+        "Arctic",
+        "Coastal",
+        "Underwater",
+        "Desert",
+        "Forest",
+        "Grasslands",
+        "Hills",
+        "Swamp",
+    ],
+    """The assassins, and many Drows, favorite
+    natural ingredient. These jagged red petals can be found growing
+    on Wyrmtongue flowers in almost every terrain. It’s almost as if
+    the world itself is trying to test humanity by letting these flowers
+    grow everywhere. These petals are used as a base for toxins
+    that can offer extremely powerful damage. For this reason,
+    Wyrmtongue is highly illegal, and in many cases punishes owners
+    of this flower with death.""",
+    "WP",
+)
