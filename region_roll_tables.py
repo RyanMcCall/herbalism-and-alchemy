@@ -1,12 +1,25 @@
+from random import randrange
+
 from ingredients import *
+
+common = {
+    2: mandrake_root,
+    3: quicksilver_lichen,
+    4: quicksilver_lichen,
+    5: wild_sageroot,
+    6: wild_sageroot,
+    7: bloodgrass,
+    8: wyrmtongue_petals,
+    9: wyrmtongue_petals,
+    10: milkweed_seeds,
+    11: milkweed_seeds,
+    12: mandrake_root,
+}
 
 
 def get_common_ingredient():
-    print("Getting common ingredient...")
-
-
-def run():
-    print("Rolling ingredients...")
+    common_ingredient_roll = randrange(1, 7) + randrange(1, 7)
+    return common[common_ingredient_roll]
 
 
 roll_tables = {
@@ -137,17 +150,18 @@ roll_tables = {
         11: radiant_synthseed,
         12: wisp_stalks,
     },
-    "common": {
-        2: mandrake_root,
-        3: quicksilver_lichen,
-        4: quicksilver_lichen,
-        5: wild_sageroot,
-        6: wild_sageroot,
-        7: bloodgrass,
-        8: wyrmtongue_petals,
-        9: wyrmtongue_petals,
-        10: milkweed_seeds,
-        11: milkweed_seeds,
-        12: mandrake_root,
-    },
 }
+
+
+def run(given_region):
+    print("Rolling ingredients...")
+    number_of_ingredients = randrange(1, 5)
+    found_ingredients = []
+
+    for num in range(0, number_of_ingredients):
+        ingredient_roll = randrange(1, 7) + randrange(1, 7)
+        while ingredient_roll not in roll_tables[given_region].keys():
+            ingredient_roll = randrange(1, 7) + randrange(1, 7)
+        found_ingredients.append(roll_tables[given_region][ingredient_roll])
+
+    return found_ingredients
