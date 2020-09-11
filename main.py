@@ -68,7 +68,12 @@ def find_herbs():
         region = get_current_region()
         print()
         # Roll for ingredients
-        region_roll_tables.run()
+        found_ingredients = region_roll_tables.run(region)
+        print()
+        print("You have found:")
+        for herb in found_ingredients:
+            print(herb.name)
+        print()
     else:
         print("Search failed!")
         print()
