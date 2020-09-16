@@ -163,6 +163,12 @@ def run(given_region):
         ingredient_roll = randrange(1, 7) + randrange(1, 7)
         while ingredient_roll not in roll_tables[given_region].keys():
             ingredient_roll = randrange(1, 7) + randrange(1, 7)
-        found_ingredients.append(roll_tables[given_region][ingredient_roll])
+        if 2 <= ingredient_roll <= 4 or 10 <= ingredient_roll <= 12:
+            if randrange(1, 101) >= 75:
+                found_ingredients.append(elemental_water)
+            else:
+                found_ingredients.append(roll_tables[given_region][ingredient_roll])
+        else:    
+            found_ingredients.append(roll_tables[given_region][ingredient_roll])
 
     return found_ingredients
