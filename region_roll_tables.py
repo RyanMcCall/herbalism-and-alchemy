@@ -18,6 +18,7 @@ common = {
 
 
 def get_common_ingredient():
+    '''Rolls for a common ingredient and returns the corresponding ingredient from common'''
     common_ingredient_roll = randrange(1, 7) + randrange(1, 7)
     return common[common_ingredient_roll]
 
