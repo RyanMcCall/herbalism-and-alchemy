@@ -72,11 +72,13 @@ def find_herbs():
         print()
         print("You have found:")
         for herb in found_ingredients:
-            print(herb.name)
+            print(f"1x {herb.shorthand} ({herb.name})")
         print()
+        sleep(1)
     else:
         print("Search failed!")
         print()
+        sleep(1)
 
 
 # Identify Herbs
