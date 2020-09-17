@@ -51,17 +51,21 @@ def get_current_region():
         else:
             region_response = input("Invalid response! Please input a valid region: ")
 
-
-# Find Herbs
-def find_herbs():
-    # Make the roll
+def handle_herbalism_check():
     print("Have the player make an Herbalism check.")
     sleep(1)
-    player_search_roll = int(
+    herbalism_check = int(
         input(
             "(D20 + WIS or INT + Prof if profiecient with and using a Herbalism Kit): "
         )
     )
+    return herbalism_check
+
+
+# Find Herbs
+def find_herbs():
+    # Make the roll
+    player_search_roll = handle_herbalism_check()
     # Declare a region
     if player_search_roll >= 15:
         print("Success!")
@@ -80,15 +84,27 @@ def find_herbs():
         print()
         sleep(1)
 
+def is_ingredient_rare(ingredient_rarity):
+    rare_rarities = ["Rare", "Very Rare"]
+    return ingredient_rarity in rare_rarities
+
 
 # Identify Herbs
 def identify_herbs():
-    pass
+    identify_shorthand = input("Shorthand for ingredient: ").lower()
+    identify_ingredient = region_roll_tables.shorthand_ref[identify_shorthand]
+    identification_roll = handle_herbalism_check()
+    ingredient_dc = 10 + identify_ingredient.DC
+
+    if is_ingredient_rare(identify_ingredient.rarity):
+        
+    else:
+
 
 
 # Craft Potion
 def craft_potions():
-    pass
+    print("Feature comming soon!")
 
 
 def execute_user_choice(choice):
