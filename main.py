@@ -51,6 +51,7 @@ def get_current_region():
         else:
             region_response = input("Invalid response! Please input a valid region: ")
 
+
 def handle_herbalism_check():
     print("Have the player make an Herbalism check.")
     sleep(1)
@@ -84,6 +85,7 @@ def find_herbs():
         print()
         sleep(1)
 
+
 def is_ingredient_rare(ingredient_rarity):
     rare_rarities = ["Rare", "Very Rare"]
     return ingredient_rarity in rare_rarities
@@ -97,9 +99,9 @@ def identify_herbs():
     ingredient_dc = 10 + identify_ingredient.DC
 
     if is_ingredient_rare(identify_ingredient.rarity):
-        
+        pass
     else:
-
+        pass
 
 
 # Craft Potion
