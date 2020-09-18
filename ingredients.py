@@ -315,7 +315,7 @@ gengko_brush = Ingredient(
     """These fan shaped leaves can be found beneath the branches of the gengko tree. The 
     genko tree is known as one of the most ancient trees in existance. Many have found 
     the leaves to possess numerous healing properties.""",
-    "GB"
+    "GB",
 )
 harrada_leaf = Ingredient(
     "Harrada Leaf",
