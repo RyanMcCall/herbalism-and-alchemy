@@ -63,7 +63,7 @@ common = {
 
 
 def get_common_ingredient():
-    '''Rolls for a common ingredient and returns the corresponding ingredient from common'''
+    """Rolls for a common ingredient and returns the corresponding ingredient from common"""
     common_ingredient_roll = randrange(1, 7) + randrange(1, 7)
     return common[common_ingredient_roll]
 
@@ -213,7 +213,7 @@ def run(given_region):
                 found_ingredients.append(elemental_water)
             else:
                 found_ingredients.append(roll_tables[given_region][ingredient_roll])
-        else:    
+        else:
             found_ingredients.append(roll_tables[given_region][ingredient_roll])
 
     return found_ingredients
