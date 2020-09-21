@@ -91,6 +91,14 @@ def is_ingredient_rare(ingredient_rarity):
     return ingredient_rarity in rare_rarities
 
 
+def rare_ingredient_identify():
+    pass
+
+
+def common_ingredient_identify():
+    pass
+
+
 # Identify Herbs
 def identify_herbs():
     identify_shorthand = input("Shorthand for ingredient: ").lower()
@@ -99,9 +107,9 @@ def identify_herbs():
     ingredient_dc = 10 + identify_ingredient.DC
 
     if is_ingredient_rare(identify_ingredient.rarity):
-        pass
+        rare_ingredient_identify()
     else:
-        pass
+        common_ingredient_identify()
 
 
 # Craft Potion
