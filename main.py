@@ -91,8 +91,18 @@ def is_ingredient_rare(ingredient_rarity):
     return ingredient_rarity in rare_rarities
 
 
-def rare_ingredient_identify():
-    pass
+def rare_ingredient_identify(identification_roll, ingredient_dc, identify_ingredient):
+    rare_dc = ingredient_dc + 3
+
+    if identification_roll >= rare_dc + 10:
+        print()
+        print('Excellent Identification! All details learned.')
+        print(f'Ingredient Name: {identify_ingredient.name}')
+        print(f'Ingredient Description: {identify_ingredient.description}')
+        print(f'Ingredient Type: {identify_ingredient.ingredient_type}')
+        print(f'Ingredient Details: {identify_ingredient.details}')
+        print(f'Ingredient Regions: {", ".join(identify_ingredient.regions)}')
+        print()
 
 
 def common_ingredient_identify():
@@ -102,14 +112,17 @@ def common_ingredient_identify():
 # Identify Herbs
 def identify_herbs():
     identify_shorthand = input("Shorthand for ingredient: ").lower()
+    print()
+
     identify_ingredient = region_roll_tables.shorthand_ref[identify_shorthand]
     identification_roll = handle_herbalism_check()
     ingredient_dc = 10 + identify_ingredient.DC
 
     if is_ingredient_rare(identify_ingredient.rarity):
-        rare_ingredient_identify()
+        rare_ingredient_identify(identification_roll, ingredient_dc, identify_ingredient)
     else:
         common_ingredient_identify()
+
 
 
 # Craft Potion
